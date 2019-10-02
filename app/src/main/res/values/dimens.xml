@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="result_margin">16dp</dimen>
+<dimen name="copy_button_padding">8dp</dimen>
+<dimen name="main_linear_layout_padding">12dp</dimen>
+<dimen name="password_rating_margin_top">4dp</dimen>
+<dimen name="password_rating_margin_bottom">8dp</dimen>
+<dimen name="reliability_indicator_padding">4dp</dimen>
+<dimen name="text_view_margin_top">8dp</dimen>
+<dimen name="text_view_margin_bottom">8dp</dimen>
+<dimen name="button_generate_margin_top">4dp</dimen>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_linear_layout_padding"
+        android:padding="@dimen/main_linear_layout_padding"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/appDescription_string"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="@dimen/text_view_margin_bottom"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/second_linear_layout"
+            android:orientation="horizontal"
+            android:background="@drawable/result_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/result_textView"
+                tools:text="result"
+                android:layout_marginBottom="@dimen/result_margin"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/result_margin"/>
+
+            <ImageButton
+                android:id="@+id/result_copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_file_copy_24px"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inputText_editText"
+            android:hint="@string/editTextHint_string"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/main_linear_layout_padding"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_password_textView"
+                android:layout_weight="3"
+                tools:text="level password"/>
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:id="@+id/indicator_imageView"
+                android:layout_weight="1"
+                android:src="@drawable/reliability_indicator_drawable"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginBottom="@dimen/text_view_margin_bottom"
+            android:layout_height="wrap_content"
+            android:id="@+id/generate_new_password_textView"
+            android:text="@string/generate_new_password_textView"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/caps_checkBox"
+            android:text="@string/caps_checkBox"
+            android:layout_marginBottom="@dimen/text_view_margin_bottom"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:checked="true"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/digits_checkBox"
+            android:text="@string/digits_checkBox"
+            android:layout_marginBottom="@dimen/text_view_margin_bottom"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:checked="true"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/special_checkBox"
+            android:text="@string/special_checkBox"
+            android:layout_marginBottom="@dimen/text_view_margin_bottom"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:checked="false"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:progress="0"
+            android:max="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_Length_textView"
+            android:layout_marginTop="@dimen/text_view_margin_top"
+            android:layout_marginBottom="@dimen/text_view_margin_bottom"
+            tools:text="result"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/generated_password_linear_layout"
+            android:orientation="horizontal"
+            android:background="@drawable/result_border">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/generated_result_textView"
+                tools:text="result"
+                android:layout_marginBottom="@dimen/result_margin"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/result_margin"/>
+
+            <ImageButton
+                android:id="@+id/generated_result_copy_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_file_copy_24px"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/generated_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generated_button_string"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
